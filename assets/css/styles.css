@@ -1,0 +1,660 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: none;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover {
+  color: red !important;
+}
+.navbar-brand img {
+  height: 70px;
+}
+
+/* Hero Section Styles */
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/gif1.gif") no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  padding: 5px 30px;
+  font-size: 1.2rem;
+  font-weight: 450;
+  background-color: #c72f2f;
+  color: white;
+  border: none;
+  border-radius: 18px;
+}
+
+.hero .btn:hover {
+  background-color: white;
+  color: black;
+  translate: transform 0.3s ease-in;
+}
+
+/* Solutions Section Styles */
+.solutions-section {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/navyBlue-Background.jpg") no-repeat center center / cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow-x: hidden; 
+  
+
+}
+
+.solution-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.solutions-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: 20vh;
+}
+
+.solutions-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.img-wrapper {
+  position: relative;
+  border: 2px solid #0d0e47ce;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.img-caption {
+  color: white;
+  padding: 5px 10px;
+  font-size: 2.1rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Prevent Horizontal Scrolling */
+.carousel-inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Position carousel controls outside the carousel */
+.outside-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carousel-control-prev.outside-controls {
+  left: -150px;
+}
+
+.carousel-control-next.outside-controls {
+  right: -150px;
+}
+
+
+
+/* Call Us Section Styles */
+.call-us-section {
+  height: 95.5vh;
+  width: 100%;
+  background: url("../images/frame-2.jpg") no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  
+}
+
+.call-us-overlay {
+  position: absolute;
+  top: 30%;
+  left: -7%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  
+}
+
+.call-us-image img {
+  max-width: 80%; 
+  border-radius: 10px; 
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);  */
+ 
+}
+
+.call-us-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 30%;
+  margin-top: -30%;
+}
+
+.call-us-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  margin-left: 30%;
+}
+
+.call-us-text .btn {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-left: 32%;
+}
+
+.call-us-text .btn:hover {
+  background-color: #c72f2f;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 32%;
+}
+
+/* Statistics Section Styles */
+.stats-container {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-evenly; 
+  gap: 6rem; 
+  background-image:url(../images/abstract.png);
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: #111;
+}
+
+.stat {
+  text-align: center; 
+}
+
+.stat .count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111;
+  animation: fadeInUp 1s ease-in-out; 
+}
+
+.stat p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+
+.stat p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  
+}
+
+
+
+
+
+/* Working Process Section Styles */
+.working-process-section {
+  background-image: url(../images/navyBlue-Background.jpg);
+  margin-top: -0.001rem;
+  padding: 2rem 0;
+}
+
+.working-process-card {
+  max-width: 100%; 
+  /* padding: 1rem;  */
+  background-image: url(../images/abstract.png);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 16px;
+  /* background-color: #111; */
+  /* padding: 10rem; */
+
+
+}
+
+.process-title {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0 4rem 0 0; 
+  text-align: left;
+}
+
+
+.process-subtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 1rem;
+}
+
+.working-process-grid {
+  margin-left: 3rem; 
+}
+
+.working-process-grid .process-item {
+  text-align: left;
+}
+
+.process-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #c72f2f;
+  display: block;
+  margin-top: 3rem;
+}
+
+.process-step-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.process-step-desc {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #c72f2f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #a22424;
+}
+
+
+
+
+/* Payment Section Styles */
+.payment-section {
+  /* background-color: #f9f9f9; */
+  background-image: url(../images/navyBlue-Background.jpg);
+}
+
+.payment-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.payment-text {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.qr-code-image {
+  border: 1px solid #ddd;
+}
+
+.accepted-title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+
+
+
+/* Footer */
+footer{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 25px 100px;
+  background-color: rgba(7, 7, 48, 0.808);
+  margin-top: 1rem;
+}
+
+footer .footer-holder{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr ;
+  grid-gap: 20px;
+}
+
+.footer-aboutus h2{
+  position: relative;
+  color: #fff;
+  font-weight:600 ;
+  margin-bottom: 15px;
+}
+
+.footer-aboutus p{
+  text-align: justify;
+  color: #fff;
+}
+
+.footer-aboutus .section-links{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,50px);
+  
+}
+
+.footer-aboutus .section-links li{
+  list-style: none;
+}
+
+.footer-aboutus .section-links li a{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  /* background: #333; */
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
+/* Adding background color and hover effects for icons in footer */
+
+/* For Instagram */
+footer .footer-aboutus .section-links li a .lni-instagram-original{
+  background: linear-gradient(45deg, #833AB4, #FD1D1D, #F77737, #E1306C);
+  color: #fff;
+  font-size: 30px;
+  border-radius:7px;
+}
+footer .footer-aboutus .section-links li a .lni-instagram-original:hover{
+  background: linear-gradient(45deg, #833ab4ce, #fd1d1db9, #f777379c, #E1306C);
+}
+
+/* For Facebook */
+footer .footer-aboutus .section-links li a .lni-facebook-original{
+  background-color: #1877F2;
+  color:white ;
+  font-size: 30px;
+  border-radius: 2px;
+}
+footer .footer-aboutus .section-links li a .lni-facebook-original:hover{
+  background-color: #1876f2d1;
+}
+
+/* For Website */
+footer .footer-aboutus .section-links li a .lni-website{
+ margin-top: 0.5rem;
+  color:#ff0000 ;
+  font-size: 30px;
+}
+footer .footer-aboutus .section-links li a .lni-website:hover{
+  color:#de0303c7 ;
+  
+}
+
+/* For Youtube */
+footer .footer-aboutus .section-links li a .lni-youtube{
+  color:#ff0000 ;
+  font-size: 30px;
+}
+footer .footer-aboutus .section-links li a .lni-youtube:hover{
+  color:#ff0000ab ;
+  
+}
+
+
+
+
+footer .footer-holder .footer-quicklinks{
+  position: relative;
+}
+
+footer .footer-holder .footer-quicklinks h2{
+  color: white;
+}
+
+footer .footer-holder .footer-quicklinks ul li{
+  list-style: none;
+}
+
+footer .footer-holder .footer-quicklinks ul li a{
+  color:#555;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+footer .footer-holder .footer-contact .info{
+  position: relative;
+}
+
+footer .footer-holder .footer-contact h2{
+  color: white;
+}
+
+footer .footer-holder .footer-contact .info li{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 16px;
+}
+
+footer .footer-holder .footer-contact .info li span{
+  color: #555;
+  font-size: 20px;
+}
+
+footer .footer-holder .footer-contact .info li a{
+  color: #555;
+  text-decoration: none;
+}
+
+.copyrightText{
+  width: 100%;
+  /* background-color: #fff; */
+  /* height: 10px; */
+  /* margin: 40px; */
+  /* padding-top: 15px; */
+  text-align: center;
+  color:#fff ;
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+/*For responsive Footer  */
+@media (max-width:991px) {
+  footer{
+      padding: 40px;
+  }
+  footer .footer-holder{
+      width: 100%;
+      display: grid;
+      grid-template-columns:repeat(2, 1fr) ;
+      grid-gap: 20px;
+  }
+
+  .copyrightText{
+      padding: 20px 40px 30px ;
+  }  
+}
+
+@media (max-width:768px) {
+  footer .footer-holder{
+      width: 100%;
+      display: grid;
+      grid-template-columns:repeat(1, 1fr) ;
+      grid-gap: 20px;
+     
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Whats app icon CSS  */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/*Whatsapp  for mobile */
+@media screen and (max-width: 767px){
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adjust responsive behavior */
+@media (max-width: 768px) {
+  .working-process-card {
+    max-width: 100%; 
+    margin-bottom: 2rem; 
+  }
+
+  .working-process-grid {
+    margin-left: 0; 
+  }
+}
+
+
+
+
+
+/* Optional: Smooth fade-in effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
