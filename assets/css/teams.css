@@ -24,6 +24,109 @@
     height: 70px;
   }
   
+
+/* Dropdown Menu */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+    width: 900px; /* Adjust width */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+    left: -300%;
+    transform: translateX(-50%);
+    border: 1px solid #e0e0e0;
+}
+
+/* Solutions Grid */
+.solutions-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    flex: 2;
+}
+
+/* Individual Solution Item */
+.solution-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.solution-item:hover {
+    background: #eaeaea;
+    transform: translateY(-3px);
+}
+
+/* Icon inside solution item */
+.solution-item img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Solution text */
+.solution-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.solution-item strong {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.solution-item p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Custom Solution Box */
+.solutions-contact {
+    background: linear-gradient(to right, #002366, #0047ab);
+    color: white;
+    padding: 24px;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.solutions-contact:hover {
+    background: linear-gradient(to right, #001a4d, #0039a6);
+    transform: scale(1.05);
+}
+
+/* Contact Button */
+.contact-btn {
+    background: white;
+    color: #0039a6;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+  
   .text-blk {
     margin-top: 0px;
     margin-right: 0px;
@@ -135,10 +238,11 @@
     display: block;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    /* padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 10px; */
+    margin-right: 10%;
   }
   
   .card-img {
@@ -148,7 +252,7 @@
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
-    max-width: 300px;
+    max-width: 600px;
   }
   
   .card-container {
